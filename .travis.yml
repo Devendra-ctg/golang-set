@@ -1,5 +1,7 @@
 language: go
-
+arch:
+    - AMD64
+    - ppc64le
 go:
     - 1.8
     - 1.9
@@ -8,4 +10,3 @@ go:
 script:
     - go test -race ./...
     - go test -bench=.
-
